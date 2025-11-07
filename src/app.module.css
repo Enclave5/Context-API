@@ -1,3 +1,42 @@
-* {
-	background-color: rgb(191, 76, 76);
+body,
+html {
+	height: 100%;
+	background-image: linear-gradient(-105deg, #009acc, #3c3d97);
+}
+
+.app {
+	text-align: center;
+}
+
+.loadingData {
+	display: flex;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	border: 7px solid #93aee4;
+	border-radius: 50%;
+	border-bottom: 7px solid transparent;
+	animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(50deg);
+	}
+	50% {
+		transform: rotate(170deg);
+	}
+	75% {
+		transform: rotate(320deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
